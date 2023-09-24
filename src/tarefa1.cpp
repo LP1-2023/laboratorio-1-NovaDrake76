@@ -7,6 +7,10 @@
 #include "retangulo.h"
 #include "triangulo.h"
 #include "circulo.h"
+#include "piramide.h"
+#include "cubo.h"
+#include "paralelepipedo.h"
+#include "esfera.h"
 
 const double PI = 3.1416;
 
@@ -49,6 +53,30 @@ int main(int argc, char *argv[])
         {
             int radius = std::stoi(argv[2]);
             circulo(radius);
+        }
+        else if (strcmp(argv[1], "piramide") == 0 && argc > 4)
+        {
+            double base = std::stod(argv[2]);
+            double lateral = std::stod(argv[3]);
+            double altura = std::stod(argv[4]);
+            piramide(base, lateral, altura);
+        }
+        else if (strcmp(argv[1], "cubo") == 0 && argc > 2)
+        {
+            double aresta = std::stod(argv[2]);
+            cubo(aresta);
+        }
+        else if (strcmp(argv[1], "paralelepipedo") == 0 && argc > 4)
+        {
+            double aresta1 = std::stod(argv[2]);
+            double aresta2 = std::stod(argv[3]);
+            double aresta3 = std::stod(argv[4]);
+            paralelepipedo(aresta1, aresta2, aresta3);
+        }
+        else if (strcmp(argv[1], "esfera") == 0 && argc > 2)
+        {
+            double raio = std::stod(argv[2]);
+            esfera(raio);
         }
         else
         {
