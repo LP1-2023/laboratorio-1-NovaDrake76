@@ -2,10 +2,10 @@
 #include <cmath>
 #include "triangulo.h"
 
-void triangulo(double base, double height)
+void triangulo(double base)
 {
-    double area = 0.5 * base * height;
-    double perimeter = base + 2 * std::sqrt(std::pow(height, 2) + std::pow(base / 2, 2));
+    double area = (base * base) * std::sqrt(3) / 4;
+    double perimeter = 3 * base;
 
     std::cout << "Area do triangulo: " << area << std::endl;
     std::cout << "Perimetro do triangulo: " << perimeter << std::endl;

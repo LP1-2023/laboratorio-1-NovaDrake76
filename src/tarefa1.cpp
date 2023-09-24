@@ -43,23 +43,21 @@ int main(int argc, char *argv[])
             int altura = std::stoi(argv[3]);
             retangulo(base, altura);
         }
-        else if (strcmp(argv[1], "triangulo") == 0 && argc > 3)
+        else if (strcmp(argv[1], "triangulo") == 0 && argc > 2)
         {
             double base = std::stod(argv[2]);
-            double altura = std::stod(argv[3]);
-            triangulo(base, altura);
+            triangulo(base);
         }
         else if (strcmp(argv[1], "circulo") == 0 && argc > 2)
         {
             int radius = std::stoi(argv[2]);
             circulo(radius);
         }
-        else if (strcmp(argv[1], "piramide") == 0 && argc > 4)
+        else if (strcmp(argv[1], "piramide") == 0 && argc > 2)
         {
             double base = std::stod(argv[2]);
-            double lateral = std::stod(argv[3]);
-            double altura = std::stod(argv[4]);
-            piramide(base, lateral, altura);
+            double altura = std::stod(argv[3]);
+            piramide(base, altura);
         }
         else if (strcmp(argv[1], "cubo") == 0 && argc > 2)
         {

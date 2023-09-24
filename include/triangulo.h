@@ -1,1 +1,1 @@
-void triangulo(double base, double height);
+void triangulo(double base);

@@ -1,1 +1,1 @@
-void piramide(double base, double lateral, double altura);
+void piramide(double base, double altura);

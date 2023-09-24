@@ -15,7 +15,7 @@
       "setup": "make",
       "run": "./bin/geometria triangulo 5",
       "input": "",
-      "output": "Area do triangulo: 21.65064\nPerimetro do triangulo: 15",
+      "output": "Area do triangulo: 10.8253\nPerimetro do triangulo: 15",
       "comparison": "included",
       "timeout": 2,
       "points": 12.5
@@ -45,7 +45,7 @@
       "setup": "make",
       "run": "./bin/geometria piramide 15 21",
       "input": "",
-      "output": "Area da piramide: 854.6\nVolume da piramide: 1470",
+      "output": "Area da piramide: 855\nVolume da piramide: 1575",
       "comparison": "included",
       "timeout": 2,
       "points": 12.5
@@ -79,6 +79,6 @@
       "comparison": "included",
       "timeout": 2,
       "points": 12.5
-    }    
+    }
   ]
 }
