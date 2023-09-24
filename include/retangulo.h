@@ -1,0 +1,1 @@
+void retangulo(int length, int width);

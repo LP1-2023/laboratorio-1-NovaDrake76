@@ -1,0 +1,1 @@
+void cubo(int aresta);

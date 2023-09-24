@@ -1,0 +1,1 @@
+int searchElement(const char* arr[], int size, const char* target);
