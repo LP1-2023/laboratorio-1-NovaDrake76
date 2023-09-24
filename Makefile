@@ -2,7 +2,7 @@ CXX = g++
 CXXFLAGS = -Wall -std=c++11 -Iinclude
 SRC_FILES = src/tarefa1.cpp src/searchElement.cpp src/quadrado.cpp src/retangulo.cpp src/triangulo.cpp src/circulo.cpp src/piramide.cpp src/cubo.cpp src/paralelepipedo.cpp src/esfera.cpp
 OBJ_FILES = $(SRC_FILES:.cpp=.o)
-OUT = bin/tarefa1
+OUT = bin/geometria
 
 $(shell mkdir -p bin)
 
