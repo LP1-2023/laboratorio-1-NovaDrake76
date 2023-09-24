@@ -1,1 +1,1 @@
-int quadrado(int side);
+void quadrado(int side);

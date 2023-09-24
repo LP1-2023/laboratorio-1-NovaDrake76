@@ -1,8 +1,8 @@
 #include <iostream>
 #include "quadrado.h"
 
-int quadrado(int side){
-    printf("Area do quadrado: %i", side*side);
-    printf("Pedrimetro do quadrado: %i", side*4);
-    return;
+void quadrado(int side)
+{
+    std::cout << "Area do quadrado: " << (side * side) << std::endl;
+    std::cout << "Perimetro do quadrado: " << (4 * side) << std::endl;
 }
