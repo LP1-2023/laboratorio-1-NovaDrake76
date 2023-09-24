@@ -6,13 +6,15 @@ OUT = bin/tarefa1
 
 $(shell mkdir -p bin)
 
+.PHONY: all clean
+
 all: $(OUT)
 
 $(OUT): $(OBJ_FILES)
-    $(CXX) $(CXXFLAGS) $(OBJ_FILES) -o $(OUT)
+	$(CXX) $(CXXFLAGS) $(OBJ_FILES) -o $(OUT)
 
 src/%.o: src/%.cpp
-    $(CXX) $(CXXFLAGS) -c $< -o $@
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
-    rm -f $(OUT) $(OBJ_FILES)
+	rm -f $(OUT) $(OBJ_FILES)
